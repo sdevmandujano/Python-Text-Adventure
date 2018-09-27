@@ -1,14 +1,18 @@
 def play():
+    inventory = ['screwdriver', 'brokenbottle']
     print("Escape from Room 237")
     action_input = get_player_command()
-    if action_input == 'n' or action_input =='N':
+    if action_input in ['n', 'N']:
         print("Go North!")
-    elif action_input == 's' or action_input =='S':
+    elif action_input in ['s', 'S']:
         print("Go South!")
-    elif action_input == 'e' or action_input== 'E':
+    elif action_input in ['e', 'E']:
         print("Go East!")
-    elif action_input == 'w' or action_input == 'W':
+    elif action_input in ['w', 'W']:
         print("Go West!")
+    elif action_input in ['i', 'I']:
+        print("Inventory:")
+        print(inventory)
     else:
         print("Invalid action!")
     
