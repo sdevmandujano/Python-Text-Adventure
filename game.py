@@ -20,7 +20,7 @@ class BrokenBottle(Weapon):
 class Photo(Weapon):
     def _init_(self):
         self.name = "Photo"
-        self.description = "A polaroid of me an other people I don't know"
+        self.description = "A polaroid of me and other people I don't know"
         self.damage = 0
 
 
