@@ -25,6 +25,7 @@ class Photo(Weapon):
 
 
 def play():
+<<<<<<< HEAD
     inventory = ['screwdriver', 'photo', 'broken bottle']
     print("Escape from Room 237")
     while True:
@@ -44,6 +45,25 @@ def play():
         else:
             print("Invalid action!")
 
+=======
+    inventory = ['screwdriver', 'brokenbottle']
+    print("Escape from Room 237")
+    action_input = get_player_command()
+    if action_input in ['n', 'N']:
+        print("Go North!")
+    elif action_input in ['s', 'S']:
+        print("Go South!")
+    elif action_input in ['e', 'E']:
+        print("Go East!")
+    elif action_input in ['w', 'W']:
+        print("Go West!")
+    elif action_input in ['i', 'I']:
+        print("Inventory:")
+        print(inventory)
+    else:
+        print("Invalid action!")
+    
+>>>>>>> 115e41dd931994a36e3c6e4c6aaeafee9cab0732
 
 def get_player_command():
     return input('Action: ')
